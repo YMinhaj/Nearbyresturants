@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorFocusedHighlight"
+    tools:context="com.example.admin.newapp.Signup_register">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="@android:color/background_light"
+        android:text="Sign Up!"
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+    android:textColorHint="@android:color/background_light"
+    android:layout_below="@+id/header"
+    android:layout_marginTop="20dp"
+    android:id="@+id/firstname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="First Name"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email id"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/lastname" />
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:hint="Contact #"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@android:color/background_light"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contact"/>
+
+    <ImageButton
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
